@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>太极功夫扇第一套-动作名称、分解教学与练习要点全解</title>
+<meta name="description" content="太极功夫扇第一套完整介绍：动作名称顺序、分段分解教学、扇法要领、音乐节拍配合、常见错误纠正与初学者练习建议，帮助您系统学习这套经典太极扇套路。">
+<meta name="keywords" content="太极功夫扇第一套,太极功夫扇,太极扇教学,功夫扇动作名称,太极扇分解动作,太极扇练习要点">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1c1b19;
+  --ink-soft:#4a4640;
+  --red:#a5251d;
+  --red-deep:#7d1a14;
+  --gold:#b98b3c;
+  --gold-soft:#e6d3ab;
+  --paper:#fbf7f0;
+  --paper-2:#f4ece0;
+  --line:#e0d5c4;
+  --white:#ffffff;
+  --shadow:0 6px 24px rgba(60,40,20,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Songti SC","STSong","SimSun","Noto Serif SC",Georgia,serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.85;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+
+/* ---------- 顶部 ---------- */
+.topbar{
+  background:var(--red-deep);
+  color:#f3e2c7;
+  font-size:13px;
+  letter-spacing:.06em;
+}
+.topbar .wrap{
+  max-width:1160px;margin:0 auto;padding:8px 20px;
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.topbar span{opacity:.9;}
+
+header.site-head{
+  background:linear-gradient(180deg,#fffdf9 0%,var(--paper) 100%);
+  border-bottom:1px solid var(--line);
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(6px);
+}
+.head-inner{
+  max-width:1160px;margin:0 auto;padding:14px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{
+  width:46px;height:46px;border-radius:50%;
+  background:radial-gradient(circle at 32% 30%,#c9402f,var(--red-deep) 70%);
+  color:#f7e6c8;display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:700;letter-spacing:-2px;
+  box-shadow:0 3px 10px rgba(125,26,20,.35);
+  flex:none;
+}
+.brand-txt strong{
+  display:block;font-size:20px;letter-spacing:.12em;color:var(--red-deep);
+}
+.brand-txt small{
+  display:block;font-size:12px;color:var(--ink-soft);letter-spacing:.22em;
+}
+nav.main-nav ul{display:flex;gap:6px;flex-wrap:wrap;}
+nav.main-nav a{
+  display:block;padding:7px 14px;border-radius:20px;
+  font-size:15px;color:var(--ink-soft);letter-spacing:.05em;
+  transition:.22s;
+}
+nav.main-nav a:hover,nav.main-nav a.active{
+  background:var(--red);color:#fff8ee;
+}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(185,139,60,.20),transparent 55%),
+    linear-gradient(150deg,#fdf9f2 0%,var(--paper-2) 100%);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero::after{
+  content:"扇";
+  position:absolute;right:-30px;bottom:-70px;
+  font-size:300px;color:rgba(165,37,29,.05);
+  line-height:1;pointer-events:none;font-weight:700;
+}
+.hero-inner{
+  max-width:1160px;margin:0 auto;padding:56px 20px 60px;
+  display:grid;grid-template-columns:1.35fr 1fr;gap:44px;align-items:center;
+  position:relative;z-index:2;
+}
+.hero-tag{
+  display:inline-block;font-size:13px;letter-spacing:.2em;
+  color:var(--red-deep);border:1px solid var(--gold);
+  border-radius:3px;padding:3px 12px;margin-bottom:18px;
+  background:rgba(230,211,171,.35);
+}
+.hero h1{
+  font-size:40px;line-height:1.35;letter-spacing:.04em;
+  color:var(--ink);font-weight:700;margin-bottom:18px;
+}
+.hero h1 em{
+  font-style:normal;color:var(--red);border-bottom:3px solid var(--gold-soft);
+}
+.hero p.lead{
+  font-size:17px;color:var(--ink-soft);max-width:620px;margin-bottom:26px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:11px 26px;border-radius:4px;
+  font-size:15px;letter-spacing:.08em;transition:.22s;border:1px solid transparent;
+}
+.btn-primary{background:var(--red);color:#fff7ec;box-shadow:0 4px 14px rgba(165,37,29,.28);}
+.btn-primary:hover{background:var(--red-deep);transform:translateY(-1px);}
+.btn-ghost{border-color:var(--gold);color:var(--red-deep);background:transparent;}
+.btn-ghost:hover{background:var(--gold-soft);}
+
+.hero-facts{
+  background:var(--white);border:1px solid var(--line);
+  border-top:4px solid var(--red);border-radius:6px;
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.hero-facts h2{
+  font-size:16px;letter-spacing:.14em;color:var(--red-deep);
+  margin-bottom:14px;padding-bottom:10px;border-bottom:1px dashed var(--line);
+}
+.hero-facts dl{display:grid;grid-template-columns:auto 1fr;gap:9px 14px;font-size:15px;}
+.hero-facts dt{color:var(--gold);font-weight:700;white-space:nowrap;}
+.hero-facts dd{color:var(--ink-soft);}
+
+/* ---------- 通用区块 ---------- */
+main{max-width:1160px;margin:0 auto;padding:0 20px;}
+section.block{padding:56px 0;border-bottom:1px solid var(--line);}
+section.block:last-of-type{border-bottom:none;}
+.sec-head{margin-bottom:30px;}
+.sec-head h2{
+  font-size:26px;letter-spacing:.06em;color:var(--ink);
+  display:inline-block;position:relative;padding-bottom:10px;
+}
+.sec-head h2::after{
+  content:"";position:absolute;left:0;bottom:0;width:56px;height:3px;
+  background:linear-gradient(90deg,var(--red),var(--gold));
+  border-radius:2px;
+}
+.sec-head p{color:var(--ink-soft);font-size:15px;margin-top:12px;max-width:820px;}
+
+/* ---------- 介绍双栏 ---------- */
+.intro-grid{
+  display:grid;grid-template-columns:1.6fr 1fr;gap:36px;align-items:start;
+}
+.intro-text p{margin-bottom:16px;color:var(--ink-soft);}
+.intro-text p strong{color:var(--red-deep);}
+.aside-card{
+  background:var(--white);border:1px solid var(--line);border-radius:6px;
+  padding:22px 24px;box-shadow:var(--shadow);
+}
+.aside-card h3{
+  font-size:16px;color:var(--red-deep);letter-spacing:.1em;
+  margin-bottom:14px;padding-left:11px;border-left:3px solid var(--gold);
+}
+.aside-card ol{counter-reset:step;font-size:15px;color:var(--ink-soft);}
+.aside-card ol li{
+  counter-increment:step;position:relative;padding:7px 0 7px 34px;
+  border-bottom:1px dashed var(--line);
+}
+.aside-card ol li:last-child{border-bottom:none;}
+.aside-card ol li::before{
+  content:counter(step);position:absolute;left:0;top:9px;
+  width:22px;height:22px;border-radius:50%;background:var(--paper-2);
+  color:var(--red-deep);font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--gold-soft);
+}
+
+/* ---------- 动作分段 ---------- */
+.duan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:22px;}
+.duan-card{
+  background:var(--white);border:1px solid var(--line);border-radius:6px;
+  padding:22px 22px 18px;position:relative;transition:.25s;
+  box-shadow:0 2px 10px rgba(60,40,20,.05);
+}
+.duan-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--gold-soft);}
+.duan-card .num{
+  font-size:13px;letter-spacing:.18em;color:var(--gold);font-weight:700;
+  display:block;margin-bottom:6px;
+}
+.duan-card h3{
+  font-size:18px;color:var(--red-deep);margin-bottom:10px;letter-spacing:.04em;
+}
+.duan-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;}
+.duan-card ul{font-size:14px;color:var(--ink-soft);}
+.duan-card ul li{
+  padding:4px 0 4px 16px;position:relative;
+}
+.duan-card ul li::before{
+  content:"";position:absolute;left:0;top:14px;width:6px;height:6px;
+  border-radius:50%;background:var(--gold-soft);border:1px solid var(--gold);
+}
+
+/* ---------- 动作表 ---------- */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--white);}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:640px;}
+thead th{
+  background:var(--red-deep);color:#f6e6cb;font-weight:600;
+  letter-spacing:.08em;padding:13px 16px;text-align:left;font-size:14.5px;
+}
+tbody td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--ink-soft);}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:nth-child(even){background:#fdfaf5;}
+tbody td:first-child{color:var(--red);font-weight:700;width:64px;}
+tbody td:nth-child(2){color:var(--ink);font-weight:600;}
+
+/* ---------- 要领 ---------- */
+.yaoling{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.yao-item{
+  border-left:3px solid var(--red);background:var(--white);
+  padding:18px 20px;border-radius:0 6px 6px 0;
+  box-shadow:0 2px 10px rgba(60,40,20,.05);
+}
+.yao-item h3{font-size:16px;color:var(--red-deep);margin-bottom:8px;letter-spacing:.05em;}
+.yao-item p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- 误区 ---------- */
+.mistake-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.mistake{
+  background:var(--paper-2);border:1px dashed var(--gold-soft);
+  border-radius:6px;padding:18px 20px;
+}
+.mistake h3{font-size:15.5px;color:var(--red-deep);margin-bottom:8px;}
+.mistake h3::before{content:"✕ ";color:var(--red);}
+.mistake p{font-size:14.5px;color:var(--ink-soft);}
+.mistake p.fix{margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);}
+.mistake p.fix::before{content:"✔ ";color:#2f7a4d;font-weight:700;}
+
+/* ---------- 音乐与练习 ---------- */
+.practice-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:start;}
+.practice-box{
+  background:var(--white);border:1px solid var(--line);border-radius:6px;
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.practice-box h3{
+  font-size:17px;color:var(--red-deep);margin-bottom:14px;letter-spacing:.06em;
+}
+.practice-box p{font-size:15px;color:var(--ink-soft);margin-bottom:12px;}
+.practice-box ul{font-size:15px;color:var(--ink-soft);}
+.practice-box ul li{padding:6px 0 6px 20px;position:relative;}
+.practice-box ul li::before{
+  content:"◆";position:absolute;left:0;top:6px;font-size:10px;color:var(--gold);
+}
+.beat{
+  display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;
+}
+.beat span{
+  font-size:13px;background:var(--paper-2);border:1px solid var(--gold-soft);
+  color:var(--red-deep);border-radius:3px;padding:4px 10px;
+}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:12px;}
+details{
+  background:var(--white);border:1px solid var(--line);border-radius:6px;
+  padding:0 20px;transition:.2s;
+}
+details[open]{border-color:var(--gold-soft);box-shadow:var(--shadow);}
+summary{
+  cursor:pointer;padding:16px 0;font-size:16px;font-weight:600;color:var(--ink);
+  list-style:none;position:relative;padding-right:32px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";position:absolute;right:2px;top:14px;font-size:20px;
+  color:var(--gold);font-weight:400;transition:.2s;
+}
+details[open] summary::after{content:"–";}
+details p{
+  font-size:15px;color:var(--ink-soft);
+  padding:0 0 18px;border-top:1px dashed var(--line);padding-top:14px;
+}
+
+/* ---------- 页脚 ---------- */
+footer.site-foot{
+  background:#2a2622;color:#c9bda9;margin-top:20px;
+  font-size:14px;
+}
+.foot-inner{
+  max-width:1160px;margin:0 auto;padding:44px 20px 26px;
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;
+}
+.foot-inner h4{
+  color:#e8d9bd;font-size:15px;letter-spacing:.12em;margin-bottom:14px;
+}
+.foot-inner p{color:#a89b86;line-height:1.9;font-size:13.5px;}
+.foot-inner ul li{margin-bottom:8px;}
+.foot-inner ul a{color:#b8ab95;font-size:13.5px;transition:.2s;}
+.foot-inner ul a:hover{color:var(--gold-soft);}
+.foot-bottom{
+  border-top:1px solid #3d3730;text-align:center;
+  padding:16px 20px;font-size:13px;color:#8d8271;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:980px){
+  .hero-inner{grid-template-columns:1fr;gap:32px;padding:44px 20px 48px;}
+  .hero h1{font-size:32px;}
+  .intro-grid{grid-template-columns:1fr;}
+  .practice-grid{grid-template-columns:1fr;}
+  .mistake-list{grid-template-columns:1fr;}
+  .foot-inner{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  .head-inner{padding:12px 16px;}
+  nav.main-nav ul{gap:2px;}
+  nav.main-nav a{padding:6px 10px;font-size:14px;}
+  .hero h1{font-size:26px;}
+  .hero p.lead{font-size:15.5px;}
+  main{padding:0 16px;}
+  section.block{padding:40px 0;}
+  .sec-head h2{font-size:22px;}
+  .hero::after{font-size:180px;bottom:-40px;}
+  .hero-facts{padding:20px;}
+  .foot-inner{grid-template-columns:1fr;gap:26px;padding:34px 16px 20px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>太极扇套路学习资料 · 动作名称与分解要点整理</span>
+    <span>适合零基础入门与进阶复习参考</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="head-inner">
+    <div class="brand">
+      <div class="brand-mark">扇</div>
+      <div class="brand-txt">
+        <strong>太极功夫扇</strong>
+        <small>套路 · 教学 · 要领</small>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#intro" class="active">套路概览</a></li>
+        <li><a href="#duan">分段动作</a></li>
+        <li><a href="#list">动作名称</a></li>
+        <li><a href="#yaoling">扇法要领</a></li>
+        <li><a href="#practice">练习方法</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag">太极武术 · 器械套路</span>
+      <h1>太极功夫扇<em>第一套</em>：动作名称、分解教学与练习要点</h1>
+      <p class="lead">
+        太极功夫扇第一套以太极拳的身法、步法为基础，融合扇子的开合、翻转与击响动作，
+        节奏明快、观赏性强。本文按套路顺序整理动作名称，说明分段结构、扇法要领与常见错误，
+        便于初学者系统记忆、逐步跟练。
+      </p>
+      <div class="hero-actions">
+        <a href="#list" class="btn btn-primary">查看动作名称表</a>
+        <a href="#practice" class="btn btn-ghost">练习方法建议</a>
+      </div>
+    </div>
+    <aside class="hero-facts">
+      <h2>套路基本信息</h2>
+      <dl>
+        <dt>套路名称</dt><dd>太极功夫扇第一套</dd>
+        <dt>项目类型</dt><dd>太极器械 · 扇术套路</dd>
+        <dt>器械</dt><dd>太极功夫扇（常用为响扇）</dd>
+        <dt>结构</dt><dd>按段落编排，动作连贯成套</dd>
+        <dt>节奏</dt><dd>配合音乐，快慢相间</dd>
+        <dt>适宜人群</dt><dd>有太极基础者、健身爱好者</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<main>
+
+  <!-- 概览 -->
+  <section class="block" id="intro">
+    <div class="sec-head">
+      <h2>套路概览：它练的是什么</h2>
+      <p>了解太极功夫扇第一套的构成逻辑，比单纯背动作名称更有助于长期记忆和动作衔接。</p>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-text">
+        <p>
+          太极功夫扇第一套是一套以太极拳理为内核、以扇子为器械的健身套路。它把太极的
+          <strong>松沉、圆活、虚实分明</strong>与扇术的<strong>开合、抖腕、击响</strong>结合起来，
+          既有太极的舒缓沉稳，也有扇子展开时干净利落的节奏感。
+        </p>
+        <p>
+          从练习角度看，这套扇的难点并不在动作数量，而在于两点：一是身法与扇法的配合，
+          扇子的开合要由腰腿带动，而不是只靠手臂甩动；二是节奏的处理，套路中既有缓慢的
+          云手、捋挤一类动作，也有快速的开扇、合扇与击响，需要做到快而不乱、慢而不散。
+        </p>
+        <p>
+          对初学者来说，比较稳妥的学习顺序是：先熟悉整套动作名称与先后顺序，形成整体印象；
+          再按段落逐段练习，把每段的起势、过渡与收势弄清楚；最后才配合音乐连贯成套。
+          直接跟视频从头到尾模仿，容易在衔接处卡壳，也不利于纠正细节。
+        </p>
+        <p>
+          需要说明的是，不同地区、不同教学版本在动作名称的措辞和段落的划分上可能存在差异，
+          本文整理的是较为通行的表述方式，具体以您所跟随的教学版本为准。
+        </p>
+      </div>
+      <aside class="aside-card">
+        <h3>建议的学习顺序</h3>
+        <ol>
+          <li>先看整套演示，建立整体印象</li>
+          <li>记住动作名称与先后顺序</li>
+          <li>按段落分解，逐段练熟</li>
+          <li>单独练开扇、合扇、抖腕等扇法</li>
+          <li>解决段落之间的衔接动作</li>
+          <li>配合音乐连贯成套</li>
+          <li>回头细抠身法与眼神</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 分段 -->
+  <section class="block" id="duan">
+    <div class="sec-head">
+      <h2>分段结构与练习重点</h2>
+      <p>把整套扇分成若干段落来练，是多数教学者推荐的方式。以下按常见分段方式说明各段的特点。</p>
+    </div>
+    <div class="duan-grid">
+      <article class="duan-card">
+        <span class="num">第一段</span>
+        <h3>起势与基本扇法</h3>
+        <p>以起势、开扇、合扇等基础动作为主，建立身体与扇子的初步配合。</p>
+        <ul>
+          <li>重点：立身中正、松肩沉肘</li>
+          <li>难点：开扇要脆、合扇要顺</li>
+          <li>提示：此段节奏偏缓，宜慢练定型</li>
+        </ul>
+      </article>
+      <article class="duan-card">
+        <span class="num">第二段</span>
+        <h3>步法配合与转身</h3>
+        <p>加入弓步、虚步、退步等步法，配合转身与扇子的方向变化。</p>
+        <ul>
+          <li>重点：脚步虚实分明，重心平稳</li>
+          <li>难点：转身时扇子方位不丢</li>
+          <li>提示：先慢速走步，再加快节奏</li>
+        </ul>
+      </article>
+      <article class="duan-card">
+        <span class="num">第三段</span>
+        <h3>击响与发力动作</h3>
+        <p>出现较为明显的击响与发力动作，是整套扇中节奏最鲜明的部分。</p>
+        <ul>
+          <li>重点：力从腰腿发，达于扇端</li>
+          <li>难点：响而不僵，避免用蛮力</li>
+          <li>提示：护腕护肩，量力而行</li>
+        </ul>
+      </article>
+      <article class="duan-card">
+        <span class="num">第四段</span>
+        <h3>连贯过渡与收势</h3>
+        <p>将前面动作串联收束，以收势结束整套套路。</p>
+        <ul>
+          <li>重点：呼吸自然，动作不断劲</li>
+          <li>难点：收势要稳，气不散乱</li>
+          <li>提示：成套练习时注意节拍收尾</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- 动作名称 -->
+  <section class="block" id="list">
+    <div class="sec-head">
+      <h2>动作名称顺序参考</h2>
+      <p>
+        下表按套路先后顺序列出常见动作名称，便于记忆与对照学习。不同教学版本的名称措辞、
+        顺序细节可能略有出入，请以您实际学习的版本为准。
+      </p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>序号</th>
+            <th>动作名称</th>
+            <th>动作要点提示</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td>起势</td><td>并步站立，松静自然，调整呼吸，重心下沉</td></tr>
+          <tr><td>02</td><td>开步抱扇</td><td>开步与抱扇同步，肩肘放松，扇身贴近身体</td></tr>
+          <tr><td>03</td><td>开扇</td><td>抖腕开扇，扇面展开干脆，力达扇端</td></tr>
+          <tr><td>04</td><td>合扇</td><td>合扇顺劲，扇骨收拢整齐，不夹手</td></tr>
+          <tr><td>05</td><td>弓步前刺</td><td>弓步沉稳，扇指前方，力从脚跟上传</td></tr>
+          <tr><td>06</td><td>虚步亮扇</td><td>虚步轻灵，扇面朝外，眼神随扇走</td></tr>
+          <tr><td>07</td><td>退步压扇</td><td>退步与压扇配合，重心后移不摇晃</td></tr>
+          <tr><td>08</td><td>转身云扇</td><td>以腰为轴转动，扇随身走，不抢不滞</td></tr>
+          <tr><td>09</td><td>独立托扇</td><td>单腿支撑稳定，托扇高度适中</td></tr>
+          <tr><td>10</td><td>歇步下截</td><td>歇步坐稳，下截动作有分寸，避免过猛</td></tr>
+          <tr><td>11</td><td>提膝开扇</td><td>提膝与开扇同步，身体保持中正</td></tr>
+          <tr><td>12</td><td>马步横扇</td><td>马步沉胯，扇面横向打开，劲力均匀</td></tr>
+          <tr><td>13</td><td>转身击响</td><td>转身带动击响，响后立即松劲</td></tr>
+          <tr><td>14</td><td>仆步穿扇</td><td>仆步下势平稳，穿扇路线清晰</td></tr>
+          <tr><td>15</td><td>收势</td><td>合扇归位，气息平复，动作完整收束</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 要领 -->
+  <section class="block" id="yaoling">
+    <div class="sec-head">
+      <h2>扇法要领：把扇子练“活”</h2>
+      <p>太极功夫扇的观赏性来自扇子的开合变化，而这些变化要靠身法带动，而非单纯用手腕甩。</p>
+    </div>
+    <div class="yaoling">
+      <div class="yao-item">
+        <h3>开扇要脆</h3>
+        <p>
+          开扇讲究一个“抖”字，手腕在瞬间发力，扇面迅速展开到位。
+          关键在于发力短促、随即放松，而不是全程绷紧手臂。开扇后扇面应平整，
+          扇骨不歪斜。
+        </p>
+      </div>
+      <div class="yao-item">
+        <h3>合扇要顺</h3>
+        <p>
+          合扇是顺着开扇的余劲收回，动作连贯不生硬。常见问题是合扇时手指被扇骨夹到，
+          多因手腕角度不对或用力过猛，练习时先放慢速度找准角度。
+        </p>
+      </div>
+      <div class="yao-item">
+        <h3>扇随身走</h3>
+        <p>
+          扇子的方向变化应由腰的转动和步法的移动带动，手臂只是传导。
+          如果只动手臂，动作会显得散、飘，也容易造成肩部疲劳。
+        </p>
+      </div>
+      <div class="yao-item">
+        <h3>眼神随扇</h3>
+        <p>
+          太极讲究“眼随手动”，扇术同样如此。眼神跟上扇子的走向，
+          整套动作会显得精神集中、气势连贯，也能帮助身体保持方向感。
+        </p>
+      </div>
+      <div class="yao-item">
+        <h3>虚实分明</h3>
+        <p>
+          弓步、虚步、歇步、仆步之间转换时，重心要清楚。
+          重心不清会导致动作发飘、站立不稳，尤其在提膝、独立类动作中更要注意。
+        </p>
+      </div>
+      <div class="yao-item">
+        <h3>快慢相间</h3>
+        <p>
+          套路中既有舒缓的云扇、捋转，也有利落的开扇、击响。
+          处理好快慢对比，整套扇才有层次，而不是一味求快或一味求慢。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 误区 -->
+  <section class="block" id="mistake">
+    <div class="sec-head">
+      <h2>初学者常见问题与纠正方向</h2>
+      <p>以下问题在初学阶段出现频率较高，提前了解可以减少走弯路。</p>
+    </div>
+    <div class="mistake-list">
+      <div class="mistake">
+        <h3>只动手臂，不转腰</h3>
+        <p>动作看起来零散，肩部容易酸胀，扇子方向也不稳定。</p>
+        <p class="fix">练习时先慢速转腰，让扇子跟着腰走，再逐渐加快。</p>
+      </div>
+      <div class="mistake">
+        <h3>开扇靠蛮力</h3>
+        <p>用力过猛导致手腕僵硬，扇面展开不到位，长期练习易伤腕。</p>
+        <p class="fix">体会“抖腕”的短促发力，发力后立即放松。</p>
+      </div>
+      <div class="mistake">
+        <h3>重心起伏过大</h3>
+        <p>步法转换时身体上下颠簸，动作失去太极的沉稳感。</p>
+        <p class="fix">注意屈膝下沉，转换时保持高度相对稳定。</p>
+      </div>
+      <div class="mistake">
+        <h3>节奏一味求快</h3>
+        <p>跟着音乐赶动作，导致衔接处仓促、动作变形。</p>
+        <p class="fix">先不听音乐慢练，动作定型后再逐步对齐节拍。</p>
+      </div>
+      <div class="mistake">
+        <h3>忽略收势</h3>
+        <p>练到最后一两动就松劲，气息散乱，整套不完整。</p>
+        <p class="fix">把收势当作正式动作练习，配合呼吸缓缓收束。</p>
+      </div>
+      <div class="mistake">
+        <h3>器械选择随意</h3>
+        <p>扇子过重或过长，影响动作幅度，也增加手腕负担。</p>
+        <p class="fix">选择重量与长度适合自身条件的练习扇，以顺手为先。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 练习方法 -->
+  <section class="block" id="practice">
+    <div class="sec-head">
+      <h2>练习方法与音乐配合</h2>
+      <p>合理安排练习顺序和强度，比一次练很久更容易见效。</p>
+    </div>
+    <div class="practice-grid">
+      <div class="practice-box">
+        <h3>分阶段练习建议</h3>
+        <p>
+          初学阶段以“记动作”为主，不必追求速度和力度。可以每天固定练习一到两个段落，
+          把动作名称、方向、衔接点记牢，再往下推进。
+        </p>
+        <ul>
+          <li>热身：活动肩、腕、膝、踝，避免冷身开扇</li>
+          <li>单练扇法：开扇、合扇、抖腕各练若干次</li>
+          <li>分段练习：一次专注一段，重复到不用想</li>
+          <li>衔接练习：专门练段落之间的过渡动作</li>
+          <li>成套练习：动作定型后再连贯走完整套</li>
+          <li>放松整理：练后松肩、抖腕、缓慢走动</li>
+        </ul>
+      </div>
+      <div class="practice-box">
+        <h3>关于音乐节拍</h3>
+        <p>
+          太极功夫扇通常配合专门编排的音乐练习。音乐的作用是提示节奏和段落转换，
+          而不是让练习者去“追赶”。建议先把动作练熟，再尝试跟音乐。
+        </p>
+        <ul>
+          <li>先数拍子，把动作与节拍对应起来</li>
+          <li>找出音乐中的段落提示点，作为转换信号</li>
+          <li>快节奏处不抢，慢节奏处不拖</li>
+          <li>击响动作与音乐重拍大致对齐即可</li>
+        </ul>
+        <div class="beat">
+          <span>起势 · 缓</span>
+          <span>开扇 · 脆</span>
+          <span>云扇 · 匀</span>
+          <span>击响 · 短</span>
+          <span>收势 · 稳</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="sec-head">
+      <h2>常见问题</h2>
+      <p>关于太极功夫扇第一套，初学者问得比较多的问题整理如下。</p>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>太极功夫扇第一套适合零基础的人学吗？</summary>
+        <p>
+          可以学，但建议先具备一定的太极基础，比如熟悉基本的步型、手型和虚实转换。
+          如果完全没有接触过太极，可以先从简化太极拳入手，等身体对松沉、重心转换有感觉之后，
+          再学扇术套路，会顺利很多。扇子本身增加了手部动作，对协调性有一定要求。
+        </p>
+      </details>
+      <details>
+        <summary>学完第一套大概需要多长时间？</summary>
+        <p>
+          这取决于练习频率和个人基础，没有统一标准。如果每周练习数次、每次专注一段，
+          通常可以在数周内把动作顺序记下来；要做到动作规范、节奏顺畅，则需要更长时间的反复练习。
+          与其关注时间，不如关注每一段是否真正练顺了。
+        </p>
+      </details>
+      <details>
+        <summary>练习用什么样的扇子比较合适？</summary>
+        <p>
+          一般选择太极功夫扇，也就是带扇骨的响扇，开合时能发出清脆声响。
+          挑选时注意扇子的重量和长度是否适合自己，过重会增加手腕负担，
+          过长则影响动作幅度。以握持顺手、开合顺畅为准，初学者不必追求特殊材质。
+        </p>
+      </details>
+      <details>
+        <summary>动作名称记不住怎么办？</summary>
+        <p>
+          可以把动作名称按段落抄下来，练习时按名称回忆动作，形成“名称—动作”的对应。
+          也可以给每段编一个简短的记忆线索，比如按方向、步型或扇子的开合状态来记。
+          多做几遍成套练习，名称自然会和动作连在一起。
+        </p>
+      </details>
+      <details>
+        <summary>练习时手腕疼是怎么回事？</summary>
+        <p>
+          常见原因是开扇、合扇时用力过猛，或者长时间重复抖腕动作。建议先减小力度，
+          体会放松发力，练习前后做好手腕的活动与放松。如果疼痛持续或加重，
+          应暂停练习并咨询专业人士，不要勉强继续。
+        </p>
+      </details>
+      <details>
+        <summary>不同版本的动作名称不一样，以哪个为准？</summary>
+        <p>
+          太极功夫扇在流传过程中形成了多种教学版本，动作名称的措辞和顺序细节可能存在差异。
+          如果您是跟着某位老师或某套教材学习，以该版本为准即可。本文整理的名称顺序
+          主要用于帮助建立整体框架，不必强求逐字一致。
+        </p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div>
+      <h4>关于本站</h4>
+      <p>
+        本站整理太极功夫扇第一套的动作名称、分段结构与练习要点，
+        内容以传统太极扇教学中的通行表述为基础，供练习者参考学习。
+        具体动作细节请结合正规教学版本与专业指导进行。
+      </p>
+    </div>
+    <div>
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#intro">套路概览</a></li>
+        <li><a href="#duan">分段结构与重点</a></li>
+        <li><a href="#list">动作名称顺序</a></li>
+        <li><a href="#yaoling">扇法要领</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>学习提示</h4>
+      <ul>
+        <li><a href="#practice">分阶段练习建议</a></li>
+        <li><a href="#mistake">常见问题纠正</a></li>
+        <li><a href="#faq">初学者问答</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    太极功夫扇第一套 · 动作名称与练习要点整理 · 内容仅供参考
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('nav.main-nav a');
+  var sections = [];
+  links.forEach(function(a){
+    var id = a.getAttribute('href');
+    if(id && id.charAt(0) === '#'){
+      var el = document.querySelector(id);
+      if(el){ sections.push({link:a, el:el}); }
+    }
+  });
+  function onScroll(){
+    var pos = window.scrollY + 140;
+    var current = sections.length ? sections[0] : null;
+    sections.forEach(function(s){
+      if(s.el.offsetTop <= pos){ current = s; }
+    });
+    links.forEach(function(a){ a.classList.remove('active'); });
+    if(current){ current.link.classList.add('active'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+</script>
+
+</body>
+        </html>
