@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>建设银行官网 - 个人与企业金融服务、业务办理与常见问题指引</title>
+<meta name="description" content="建设银行官网首页信息指引，涵盖个人金融、企业金融、信用卡、贷款、投资理财、手机银行与常见业务办理说明，帮助用户快速了解建设银行主要服务与办理渠道。">
+<meta name="keywords" content="建设银行官网,建设银行,中国建设银行,个人金融,企业金融,信用卡,住房贷款,手机银行,网点查询">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ccb-blue:#005baa;
+    --ccb-blue-dark:#003f7d;
+    --ccb-blue-light:#e8f2fb;
+    --ccb-accent:#c79a3b;
+    --ink:#1b2733;
+    --ink-soft:#4a5b6b;
+    --line:#dbe4ed;
+    --bg:#f5f8fb;
+    --radius:8px;
+    --shadow:0 2px 10px rgba(0,60,120,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.7;
+    font-size:16px;
+  }
+  a{color:var(--ccb-blue);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  img{max-width:100%;}
+  .wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 20px;}
+
+  /* 顶栏 */
+  .topbar{
+    background:var(--ccb-blue-dark);
+    color:#cfe2f5;
+    font-size:13px;
+    line-height:36px;
+  }
+  .topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+  .topbar a{color:#cfe2f5;}
+  .topbar nav span{margin-left:18px;}
+
+  /* 页眉 */
+  header.site-header{
+    background:#fff;
+    border-bottom:3px solid var(--ccb-blue);
+    box-shadow:var(--shadow);
+    position:sticky;
+    top:0;
+    z-index:50;
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:14px 20px;
+    max-width:1200px;
+    margin:0 auto;
+    flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-mark{
+    width:46px;height:46px;flex:none;
+    border-radius:6px;
+    background:linear-gradient(135deg,var(--ccb-blue),#0076cf);
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:700;font-size:20px;letter-spacing:1px;
+  }
+  .brand-text strong{display:block;font-size:20px;letter-spacing:1px;color:var(--ccb-blue-dark);}
+  .brand-text small{color:var(--ink-soft);font-size:12px;letter-spacing:.5px;}
+  .header-tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .header-tools .quick-link{
+    font-size:14px;color:var(--ink-soft);
+    padding:6px 12px;border:1px solid var(--line);border-radius:20px;
+  }
+  .header-tools .quick-link:hover{border-color:var(--ccb-blue);color:var(--ccb-blue);text-decoration:none;}
+  .btn-login{
+    background:var(--ccb-blue);color:#fff;
+    padding:8px 20px;border-radius:20px;font-size:14px;
+  }
+  .btn-login:hover{background:var(--ccb-blue-dark);text-decoration:none;}
+
+  /* 主导航 */
+  nav.mainnav{background:var(--ccb-blue);}
+  nav.mainnav ul{
+    list-style:none;
+    display:flex;flex-wrap:wrap;
+    max-width:1200px;margin:0 auto;padding:0 20px;
+  }
+  nav.mainnav li a{
+    display:block;
+    color:#eaf4ff;
+    padding:13px 22px;
+    font-size:15px;
+  }
+  nav.mainnav li a:hover,nav.mainnav li a.active{
+    background:var(--ccb-blue-dark);color:#fff;text-decoration:none;
+  }
+
+  /* 首屏 */
+  .hero{
+    background:linear-gradient(120deg,#003f7d 0%,#005baa 55%,#0a7bd0 100%);
+    color:#fff;
+    padding:52px 0 46px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:36px;
+    align-items:start;
+  }
+  .hero h1{font-size:30px;line-height:1.4;margin-bottom:14px;letter-spacing:.5px;}
+  .hero p.lead{font-size:16px;color:#d6e8fa;margin-bottom:22px;max-width:620px;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-actions a{
+    display:inline-block;padding:11px 26px;border-radius:24px;font-size:15px;
+  }
+  .hero-actions .primary{background:#fff;color:var(--ccb-blue-dark);font-weight:600;}
+  .hero-actions .primary:hover{text-decoration:none;background:#eaf4ff;}
+  .hero-actions .ghost{border:1px solid rgba(255,255,255,.7);color:#fff;}
+  .hero-actions .ghost:hover{text-decoration:none;background:rgba(255,255,255,.12);}
+  .hero-points{
+    list-style:none;margin-top:26px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  }
+  .hero-points li{
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:var(--radius);
+    padding:12px 14px;
+    font-size:13.5px;color:#e3f0fc;
+  }
+  .hero-points li strong{display:block;font-size:15px;color:#fff;margin-bottom:2px;}
+
+  /* 快捷服务面板 */
+  .service-panel{
+    background:#fff;
+    border-radius:var(--radius);
+    padding:22px 22px 18px;
+    color:var(--ink);
+    box-shadow:0 8px 26px rgba(0,20,50,.25);
+  }
+  .service-panel h2{
+    font-size:17px;color:var(--ccb-blue-dark);
+    padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:14px;
+  }
+  .service-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  }
+  .service-grid a{
+    display:block;text-align:center;
+    padding:14px 6px;
+    border:1px solid var(--line);border-radius:6px;
+    font-size:13.5px;color:var(--ink-soft);
+    background:#fbfdff;
+  }
+  .service-grid a:hover{
+    border-color:var(--ccb-blue);color:var(--ccb-blue);
+    background:var(--ccb-blue-light);text-decoration:none;
+  }
+  .service-grid a i{
+    display:block;font-style:normal;font-size:18px;color:var(--ccb-blue);margin-bottom:6px;
+  }
+  .panel-note{font-size:12.5px;color:#7b8b9b;margin-top:14px;line-height:1.6;}
+
+  /* 通用区块 */
+  section.block{padding:46px 0;}
+  section.block.alt{background:#fff;}
+  .block-head{margin-bottom:26px;}
+  .block-head h2{
+    font-size:23px;color:var(--ccb-blue-dark);
+    padding-left:14px;border-left:4px solid var(--ccb-blue);line-height:1.3;
+  }
+  .block-head p{color:var(--ink-soft);font-size:14.5px;margin-top:8px;padding-left:18px;}
+
+  /* 业务卡片 */
+  .card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 20px;
+    transition:box-shadow .2s,transform .2s;
+  }
+  .card:hover{box-shadow:var(--shadow);transform:translateY(-2px);}
+  .card h3{
+    font-size:17px;color:var(--ccb-blue-dark);margin-bottom:10px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .card h3 .tag{
+    font-size:11px;color:#fff;background:var(--ccb-accent);
+    padding:2px 7px;border-radius:10px;font-weight:400;letter-spacing:.5px;
+  }
+  .card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:12px;}
+  .card ul{list-style:none;font-size:13.5px;color:var(--ink-soft);}
+  .card ul li{padding-left:14px;position:relative;margin-bottom:5px;}
+  .card ul li::before{
+    content:"";position:absolute;left:0;top:9px;
+    width:5px;height:5px;border-radius:50%;background:var(--ccb-blue);
+  }
+  .card .more{font-size:13.5px;display:inline-block;margin-top:6px;}
+
+  /* 办理流程 */
+  .steps{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;counter-reset:step;
+  }
+  .step{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 20px 18px;position:relative;
+  }
+  .step::before{
+    counter-increment:step;content:counter(step,decimal-leading-zero);
+    font-size:26px;font-weight:700;color:var(--ccb-blue-light);
+    display:block;line-height:1;margin-bottom:10px;
+  }
+  .step h3{font-size:16px;color:var(--ccb-blue-dark);margin-bottom:8px;}
+  .step p{font-size:14px;color:var(--ink-soft);}
+
+  /* 资讯/公告列表 */
+  .news-layout{
+    display:grid;grid-template-columns:1.3fr 1fr;gap:26px;
+  }
+  .news-list{list-style:none;}
+  .news-list li{
+    padding:14px 0;border-bottom:1px dashed var(--line);
+    display:flex;justify-content:space-between;gap:16px;align-items:baseline;
+  }
+  .news-list li:first-child{padding-top:0;}
+  .news-list a{font-size:15px;color:var(--ink);}
+  .news-list a:hover{color:var(--ccb-blue);}
+  .news-list time{font-size:13px;color:#95a4b3;flex:none;}
+  .notice-box{
+    background:var(--ccb-blue-light);
+    border-radius:var(--radius);
+    padding:22px;
+  }
+  .notice-box h3{font-size:16px;color:var(--ccb-blue-dark);margin-bottom:12px;}
+  .notice-box ul{list-style:none;font-size:14px;}
+  .notice-box li{
+    padding:9px 0;border-bottom:1px solid #d3e5f5;color:var(--ink-soft);
+  }
+  .notice-box li:last-child{border-bottom:none;}
+
+  /* 安全提示 */
+  .safety{
+    background:#fff;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .safety-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;
+  }
+  .safety-item{
+    padding:18px 20px;border-left:3px solid var(--ccb-accent);
+    background:#fdfbf6;border-radius:0 var(--radius) var(--radius) 0;
+  }
+  .safety-item h3{font-size:15.5px;color:#8a6a1f;margin-bottom:8px;}
+  .safety-item p{font-size:14px;color:var(--ink-soft);}
+
+  /* FAQ */
+  .faq-list{max-width:900px;}
+  .faq-item{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    margin-bottom:12px;overflow:hidden;
+  }
+  .faq-item summary{
+    cursor:pointer;padding:16px 20px;font-size:15.5px;font-weight:600;
+    color:var(--ccb-blue-dark);list-style:none;position:relative;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";position:absolute;right:20px;top:14px;
+    font-size:20px;color:var(--ccb-blue);font-weight:400;
+  }
+  .faq-item[open] summary::after{content:"−";}
+  .faq-item .faq-body{
+    padding:0 20px 18px;font-size:14.5px;color:var(--ink-soft);
+    border-top:1px solid var(--line);padding-top:14px;
+  }
+
+  /* 页脚 */
+  footer.site-footer{
+    background:#0d2438;color:#9fb4c7;font-size:13.5px;padding:40px 0 24px;
+  }
+  .footer-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:26px;padding-bottom:26px;border-bottom:1px solid #1e3a54;
+  }
+  .footer-grid h4{color:#fff;font-size:15px;margin-bottom:12px;}
+  .footer-grid ul{list-style:none;}
+  .footer-grid li{margin-bottom:8px;}
+  .footer-grid a{color:#9fb4c7;}
+  .footer-grid a:hover{color:#fff;}
+  .footer-bottom{
+    padding-top:18px;display:flex;justify-content:space-between;
+    gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7d93a8;
+  }
+
+  /* 响应式 */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;}
+    .news-layout{grid-template-columns:1fr;}
+    .hero h1{font-size:25px;}
+  }
+  @media (max-width:640px){
+    .topbar .wrap{justify-content:center;text-align:center;}
+    .topbar nav span{margin:0 8px;}
+    .header-inner{padding:12px 16px;}
+    .brand-text strong{font-size:17px;}
+    .hero{padding:36px 0 34px;}
+    .hero h1{font-size:21px;}
+    .hero-points{grid-template-columns:1fr;}
+    .service-grid{grid-template-columns:repeat(2,1fr);}
+    nav.mainnav li a{padding:11px 14px;font-size:14px;}
+    section.block{padding:34px 0;}
+    .block-head h2{font-size:19px;}
+    .news-list li{flex-direction:column;gap:4px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>中国建设银行 · 官方网站信息导航页</span>
+    <nav>
+      <span><a href="#safety">安全提示</a></span>
+      <span><a href="#faq">常见问题</a></span>
+      <span><a href="#service">业务办理</a></span>
+    </nav>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">CCB</div>
+      <div class="brand-text">
+        <strong>建设银行官网</strong>
+        <small>个人金融 · 企业金融 · 综合服务</small>
+      </div>
+    </div>
+    <div class="header-tools">
+      <a class="quick-link" href="#service">网点与渠道</a>
+      <a class="quick-link" href="#faq">帮助中心</a>
+      <a class="btn-login" href="#service">登录入口指引</a>
+    </div>
+  </div>
+  <nav class="mainnav">
+    <ul>
+      <li><a class="active" href="#top">首页</a></li>
+      <li><a href="#personal">个人金融</a></li>
+      <li><a href="#business">企业金融</a></li>
+      <li><a href="#card">信用卡</a></li>
+      <li><a href="#loan">贷款服务</a></li>
+      <li><a href="#invest">投资理财</a></li>
+      <li><a href="#digital">电子银行</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>建设银行官网服务导航：从个人储蓄到企业结算的一站式入口</h1>
+        <p class="lead">
+          如果你正在查找建设银行的官方渠道、业务办理方式或产品说明，本页按个人金融、企业金融、信用卡、贷款、理财与电子银行等方向梳理了主要服务入口与办理逻辑，帮助你更快定位到需要的功能，并了解办理前应准备的资料与注意事项。
+        </p>
+        <div class="hero-actions">
+          <a class="primary" href="#service">查看业务办理指引</a>
+          <a class="ghost" href="#safety">了解账户安全提示</a>
+        </div>
+        <ul class="hero-points">
+          <li><strong>渠道清晰</strong>区分线上与线下办理场景</li>
+          <li><strong>资料明确</strong>常见业务所需材料说明</li>
+          <li><strong>风险提示</strong>识别非官方渠道与诈骗手法</li>
+        </ul>
+      </div>
+
+      <aside class="service-panel" id="service">
+        <h2>常用业务快捷入口</h2>
+        <div class="service-grid">
+          <a href="#personal"><i>储</i>账户查询</a>
+          <a href="#loan"><i>贷</i>贷款申请</a>
+          <a href="#card"><i>卡</i>信用卡</a>
+          <a href="#invest"><i>财</i>投资理财</a>
+          <a href="#business"><i>企</i>企业服务</a>
+          <a href="#digital"><i>网</i>电子银行</a>
+        </div>
+        <p class="panel-note">
+          提示：涉及账户登录、资金交易、密码修改等操作，请务必通过建设银行官方渠道完成。本页为服务信息导航，不提供登录、支付或转账功能。
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 个人金融 -->
+  <section class="block" id="personal">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>个人金融服务</h2>
+        <p>面向个人客户的储蓄、结算、消费与财富管理类业务，通常可在网点柜台、自助设备或官方电子渠道办理。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>储蓄存款与账户管理</h3>
+          <p>包括活期与定期存款、账户开立与变更、挂失与解挂等基础业务，是个人客户使用其他金融服务的前提。</p>
+          <ul>
+            <li>开户一般需本人有效身份证件</li>
+            <li>账户信息变更建议本人办理</li>
+            <li>可关注账户余额变动提醒设置</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>转账汇款与支付结算</h3>
+          <p>支持行内与跨行转账、代扣代缴等常见结算需求，不同渠道的到账时间与限额规则存在差异。</p>
+          <ul>
+            <li>转账前核对收款人姓名与账号</li>
+            <li>大额转账建议提前了解限额规则</li>
+            <li>保留交易凭证便于后续核对</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>个人外汇与跨境业务</h3>
+          <p>涉及结售汇、跨境汇款等业务时，通常需要符合相关管理规定并提交对应证明材料。</p>
+          <ul>
+            <li>办理前确认用途与额度要求</li>
+            <li>准备真实合规的证明文件</li>
+            <li>以网点实际审核结果为准</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>财富管理与理财服务</h3>
+          <p>包括存款类、理财类、基金代销类等不同风险等级的产品，适合不同风险承受能力的客户。</p>
+          <ul>
+            <li>购买前完成风险承受能力评估</li>
+            <li>了解产品期限与流动性安排</li>
+            <li>理性看待收益与风险的关系</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业金融 -->
+  <section class="block alt" id="business">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>企业金融服务</h2>
+        <p>面向各类企业与机构的结算、融资与现金管理需求，办理时通常需要提供营业执照等主体资质材料。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>对公账户与结算服务</h3>
+          <p>企业开立基本存款账户、一般存款账户等，需按照账户管理规定提交材料并完成审核流程。</p>
+          <ul>
+            <li>准备营业执照与法人身份证明</li>
+            <li>根据实际经营需要选择账户类型</li>
+            <li>及时更新企业信息变更情况</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>企业融资与信贷支持</h3>
+          <p>涵盖流动资金、项目类、票据类等多种融资方式，授信条件与企业经营状况、担保方式相关。</p>
+          <ul>
+            <li>提前整理财务报表与经营资料</li>
+            <li>明确资金用途与还款安排</li>
+            <li>具体额度与利率以审批结果为准</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>现金管理与资金归集</h3>
+          <p>适合有多账户、多层级资金管理需求的企业，用于提升资金使用效率与对账便利性。</p>
+          <ul>
+            <li>梳理集团与子公司账户结构</li>
+            <li>明确归集规则与授权层级</li>
+            <li>关注资金调拨的合规要求</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>国际业务与贸易结算</h3>
+          <p>包括信用证、托收、结售汇等跨境结算工具，需符合外汇管理与贸易真实性审核要求。</p>
+          <ul>
+            <li>准备合同、发票等贸易单据</li>
+            <li>关注汇率波动对成本的影响</li>
+            <li>按实际业务背景办理相关手续</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 信用卡 -->
+  <section class="block" id="card">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>信用卡服务</h2>
+        <p>信用卡涉及申请、使用、还款与账务管理多个环节，理解计息与还款规则有助于避免不必要的费用。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>申请与审批 <span class="tag">新客户</span></h3>
+          <p>申请时需提交身份与资信相关材料，审批结果由银行根据综合评估确定，不以申请时间先后决定。</p>
+          <ul>
+            <li>如实填写职业与收入信息</li>
+            <li>留意卡片寄送与激活方式</li>
+            <li>额度由银行综合评定</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>账单与还款</h3>
+          <p>按时还款是保持良好信用记录的重要方式，账单日与还款日之间的时间安排需要提前规划。</p>
+          <ul>
+            <li>区分全额还款与最低还款的差异</li>
+            <li>关注逾期可能产生的费用与影响</li>
+            <li>可设置自动还款避免遗忘</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>分期与权益</h3>
+          <p>账单分期、消费分期等可将大额支出分摊到多期，但通常会产生手续费，需结合自身情况评估。</p>
+          <ul>
+            <li>了解分期手续费的计算方式</li>
+            <li>提前还款规则以条款为准</li>
+            <li>权益使用以官方公布为准</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>安全用卡</h3>
+          <p>卡片信息、验证码与密码属于敏感信息，任何以“提额”“验证”为由索要信息的行为都需警惕。</p>
+          <ul>
+            <li>不向他人透露短信验证码</li>
+            <li>开通交易提醒及时掌握动态</li>
+            <li>卡片遗失立即通过官方渠道挂失</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 贷款 -->
+  <section class="block alt" id="loan">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>贷款服务</h2>
+        <p>贷款申请的核心在于用途合规、还款能力可评估以及材料真实完整，具体条件与利率以银行审批为准。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>明确资金用途</h3>
+          <p>住房、经营、消费等不同用途对应不同的贷款产品与材料要求，先确定用途再选择产品更高效。</p>
+        </div>
+        <div class="step">
+          <h3>评估还款能力</h3>
+          <p>结合收入稳定性、负债水平与家庭支出，合理确定贷款金额与期限，避免月供压力过大。</p>
+        </div>
+        <div class="step">
+          <h3>准备申请材料</h3>
+          <p>通常包括身份证明、收入或经营证明、用途相关合同等，材料真实完整有助于加快流程。</p>
+        </div>
+        <div class="step">
+          <h3>提交申请与审核</h3>
+          <p>银行会根据资信状况、担保方式等综合评估，期间可能需要补充材料或进行面谈核实。</p>
+        </div>
+        <div class="step">
+          <h3>签约与放款</h3>
+          <p>审批通过后签订合同，明确金额、期限、利率与还款方式，放款后按约定按时还款。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 投资理财 -->
+  <section class="block" id="invest">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>投资理财与资产配置</h2>
+        <p>理财决策应建立在自身风险承受能力与资金使用计划之上，任何产品都不存在脱离风险的“稳赚”承诺。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>先做风险评估</h3>
+          <p>购买理财产品前通常需要完成风险承受能力评估，评估结果会影响可购买的产品范围。</p>
+        </article>
+        <article class="card">
+          <h3>区分产品类型</h3>
+          <p>存款、理财、基金、保险等产品在收益来源、风险等级与流动性上差异明显，不宜混为一谈。</p>
+        </article>
+        <article class="card">
+          <h3>匹配资金期限</h3>
+          <p>短期要用的资金应优先考虑流动性，长期闲置资金才适合考虑期限较长的产品安排。</p>
+        </article>
+        <article class="card">
+          <h3>关注信息披露</h3>
+          <p>认真阅读产品说明书与风险揭示内容，了解费用、投资方向与可能的损失情形。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 电子银行 -->
+  <section class="block alt" id="digital">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>电子银行与线上渠道</h2>
+        <p>手机银行、网上银行等电子渠道提升了办理效率，但使用过程中的设备与账号安全同样重要。</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>手机银行</h3>
+          <p>适合查询、转账、缴费、理财等高频操作，建议从官方应用市场下载并保持版本更新。</p>
+          <ul>
+            <li>开启手势或生物识别登录</li>
+            <li>不随意授权陌生应用读取短信</li>
+            <li>更换手机号后及时更新绑定信息</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>网上银行</h3>
+          <p>适合在电脑端处理较复杂的查询与企业相关操作，使用时注意网络环境与设备安全。</p>
+          <ul>
+            <li>避免在公共电脑保存登录信息</li>
+            <li>核对官方网址后再输入信息</li>
+            <li>使用完成后及时退出登录</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>自助设备与网点</h3>
+          <p>存取款、打印流水、办理部分签约业务可通过网点自助设备完成，复杂业务建议提前咨询。</p>
+          <ul>
+            <li>操作时注意遮挡密码键盘</li>
+            <li>核对凭条信息后再离开</li>
+            <li>遇到异常及时联系工作人员</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>客服与咨询渠道</h3>
+          <p>遇到账户疑问或业务咨询，可通过官方公布的客服渠道核实，避免轻信陌生来电与短信链接。</p>
+          <ul>
+            <li>通过官方渠道获取联系方式</li>
+            <li>不向陌生人提供账户密码</li>
+            <li>对可疑信息保持核实习惯</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 资讯与公告 -->
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>服务动态与办理提示</h2>
+        <p>以下为常见业务办理方向与提示性内容，具体规则、时间与要求请以建设银行官方公布信息为准。</p>
+      </div>
+      <div class="news-layout">
+        <div>
+          <ul class="news-list">
+            <li><a href="#loan">住房贷款办理前需要了解的基本流程与材料方向</a><time>贷款服务</time></li>
+            <li><a href="#card">信用卡账单日与还款日的区别及还款安排建议</a><time>信用卡</time></li>
+            <li><a href="#business">企业开立对公账户的常见材料与审核要点</a><time>企业金融</time></li>
+            <li><a href="#digital">手机银行更换设备后如何保障账户安全</a><time>电子银行</time></li>
+            <li><a href="#invest">理财产品风险等级与自身承受能力的匹配思路</a><time>投资理财</time></li>
+            <li><a href="#safety">识别冒充银行工作人员的常见话术与应对方式</a><time>安全提示</time></li>
+          </ul>
+        </div>
+        <aside class="notice-box">
+          <h3>办理前自查清单</h3>
+          <ul>
+            <li>确认办理渠道为官方渠道</li>
+            <li>核对所需证件与材料是否齐全</li>
+            <li>了解业务涉及的费用与规则</li>
+            <li>确认本人联系方式准确有效</li>
+            <li>对不确定事项先咨询再操作</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 安全提示 -->
+  <section class="block safety" id="safety">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>账户与资金安全提示</h2>
+        <p>金融诈骗手法不断变化，但核心目的通常是获取你的账户信息、验证码或诱导转账。</p>
+      </div>
+      <div class="safety-grid">
+        <div class="safety-item">
+          <h3>不透露验证码</h3>
+          <p>短信验证码是账户操作的重要凭证，任何机构与个人都不会以“核实身份”为由索要验证码。</p>
+        </div>
+        <div class="safety-item">
+          <h3>不点击陌生链接</h3>
+          <p>短信、社交软件中的不明链接可能指向仿冒页面，输入信息前务必核对网址来源。</p>
+        </div>
+        <div class="safety-item">
+          <h3>不轻信“安全账户”</h3>
+          <p>以涉案、洗钱、退税等理由要求转账至所谓安全账户的，均属于典型诈骗话术。</p>
+        </div>
+        <div class="safety-item">
+          <h3>及时核实与挂失</h3>
+          <p>发现账户异常交易或卡片遗失，应第一时间通过官方渠道冻结或挂失，减少损失风险。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block alt" id="faq">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>常见问题</h2>
+        <p>以下回答为一般性说明，具体办理要求可能因地区、时间与业务类型不同而有所差异。</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>建设银行官网主要提供哪些服务入口？</summary>
+          <div class="faq-body">
+            官网通常按个人金融、企业金融、信用卡、贷款、投资理财、电子银行等方向组织内容，并提供产品介绍、业务说明与帮助信息。涉及账户操作的功能需要通过官方登录渠道进入，具体入口以官网实际页面为准。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>办理银行卡需要准备什么材料？</summary>
+          <div class="faq-body">
+            个人开户一般需要本人有效身份证件，部分情形下可能需要补充居住或工作相关证明。建议办理前通过官方客服渠道确认当地网点的具体要求，避免多次往返。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>贷款申请一般需要多长时间？</summary>
+          <div class="faq-body">
+            审批时间受贷款类型、材料完整度、担保方式与审核进度等因素影响，没有统一时长。材料准备充分、信息真实完整通常有助于流程推进，具体进度可向受理渠道咨询。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>信用卡逾期会有什么影响？</summary>
+          <div class="faq-body">
+            逾期可能产生相应费用，并可能对个人信用记录产生影响。若确实遇到还款困难，建议尽早通过官方渠道了解可行的处理方式，而不是回避或轻信第三方“修复征信”的说法。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>如何判断自己访问的是不是官方渠道？</summary>
+          <div class="faq-body">
+            建议通过官方公布的方式获取网址与应用下载来源，注意核对域名拼写，不通过陌生链接或二维码进入登录页面。对要求提供密码、验证码的操作保持高度警惕。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>理财产品可以保证收益吗？</summary>
+          <div class="faq-body">
+            除存款类产品外，多数理财产品不承诺保本保收益，收益与风险通常相伴而生。购买前应认真阅读产品说明与风险揭示，结合自身风险承受能力做出判断。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>个人服务</h4>
+        <ul>
+          <li><a href="#personal">储蓄与账户</a></li>
+          <li><a href="#card">信用卡服务</a></li>
+          <li><a href="#loan">贷款服务</a></li>
+          <li><a href="#invest">投资理财</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>企业服务</h4>
+        <ul>
+          <li><a href="#business">对公账户</a></li>
+          <li><a href="#business">企业融资</a></li>
+          <li><a href="#business">现金管理</a></li>
+          <li><a href="#business">国际业务</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>渠道与帮助</h4>
+        <ul>
+          <li><a href="#digital">电子银行</a></li>
+          <li><a href="#service">业务办理指引</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#safety">安全提示</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>重要说明</h4>
+        <ul>
+          <li>本页为服务信息导航</li>
+          <li>不提供登录与交易功能</li>
+          <li>业务规则以官方公布为准</li>
+          <li>请通过官方渠道办理业务</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>建设银行官网 · 服务信息导航页</span>
+      <span>内容仅供参考，具体业务办理要求请以官方渠道说明为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 平滑定位并高亮当前导航项
+  (function () {
+    var links = document.querySelectorAll('nav.mainnav a[href^="#"]');
+    links.forEach(function (link) {
+      link.addEventListener('click', function () {
+        links.forEach(function (l) { l.classList.remove('active'); });
+        link.classList.add('active');
+      });
+    });
+  })();
+</script>
+
+</body>
+    </html>
